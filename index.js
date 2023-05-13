@@ -19,7 +19,7 @@ const addUser = (e)=>{
  users.forEach((item, index)=>{
     const listItem = document.createElement('li');
     listItem.style.listStyle='none';
-    listItem.textContent = item.name + '  ' + item.identity+" "+ item.nationality+' '+item.Language;
+    listItem.textContent = item.name + ' | ' + item.identity+" |"+ item.nationality+' |'+item.Language;
 
     const deleteButton = document.createElement('button');
     deleteButton.textContent = 'delete';
