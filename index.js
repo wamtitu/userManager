@@ -8,20 +8,8 @@ const addUser = (e)=>{
  let newUser = {
     name: document.getElementById('fname').value,
     identity: document.getElementById('idno').value,
-    getNationality: function () {
-        const countryInputs = document.querySelectorAll('input[name="country"]');
-        let nationality = '';
-    
-        countryInputs.forEach((input) => {
-          if (input.checked) {
-            nationality = input.value;
-          }
-        });
-    
-        return nationality;
-    
-},
-    // nationality: countryInput ? countryInput.value : ''
+    nationality: document.getElementById('country').value,
+    Language: document.getElementById('language').value
  }
  users.push(newUser);
  console.log(newUser)
@@ -31,7 +19,7 @@ const addUser = (e)=>{
  users.forEach((item, index)=>{
     const listItem = document.createElement('li');
     listItem.style.listStyle='none';
-    listItem.textContent = item.name + '  ' + item.identity+" "+ item.nationality;
+    listItem.textContent = item.name + '  ' + item.identity+" "+ item.nationality+' '+item.Language;
 
     const deleteButton = document.createElement('button');
     deleteButton.textContent = 'delete';

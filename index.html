@@ -25,13 +25,23 @@
             <label for="idNumber">ID number:</label><br>
             <input type="number" id="idno" placeholder="identity"><br>
 
-            <p>chose your country of origin</p>
-            <input type="radio" id="Kenya" name="country" >
-            <label for="Kenya">Kenya</label><br>
-            <input type="radio" id="Uganda" name="country" >
-            <label for="Uganda">Uganda</label><br>
-            <input type="radio" id="Tanzania" name="country" >
-            <label for="Tanzania">Tanzania</label><br>
+            <label for="country">Select a country:</label><br>
+            <select id="country" name="country">
+                <option value="kenya">Kenya</option>
+                <option value="uganda">Uganda</option>
+                <option value="tanzania">Tanzania</option>
+                <option value="somalia">Somalia</option>
+            </select>
+            <br>
+            <label for="language">Select a language:</label><br>
+            <select id="language" name="language">
+                <option value="arabic">Arabic</option>
+                <option value="english">English</option>
+                <option value="swahili">Swahili</option>
+                <option value="french">French</option>
+                <option value="spanish">Spanish</option>
+            </select>
+            <br>
 
             <input type="submit" id="submit" value="add User">
         </form>
