@@ -1,0 +1,51 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Management System</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="nav">
+            <logo>LOGO</logo>
+            <div class="menu">
+                <ul>
+                    <li>home</li>
+                    <li>users</li>
+                    <li>about</li>
+                    <li>contacts</li>
+                </ul>
+            </div>
+        </div>
+        <form action="">
+            <label for="fname">Fullname:</label><br>
+            <input type="text" id="fname" placeholder="name"><br>
+            <label for="idNumber">ID number:</label><br>
+            <input type="number" id="idno" placeholder="identity"><br>
+
+            <p>chose your country of origin</p>
+            <input type="radio" id="Kenya" name="country" >
+            <label for="Kenya">Kenya</label><br>
+            <input type="radio" id="Uganda" name="country" >
+            <label for="Uganda">Uganda</label><br>
+            <input type="radio" id="Tanzania" name="country" >
+            <label for="Tanzania">Tanzania</label><br>
+
+            <input type="submit" id="submit" value="add User">
+        </form>
+        <div class="registered-users">
+            <ul>
+                <!-- <li><span class="pDetails">joseph 32 kenya</span>
+                    <span class="deleteButton">delete</span>
+                </li>
+                <li><span class="pDetails">dan 32 ugandan</span>
+                    <span class="deleteButton">delete</span>
+                </li> -->
+            </ul>
+        </div>
+    </div>
+    <script src="./index.js"></script>
+</body>
+</html>

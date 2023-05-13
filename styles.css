@@ -1,0 +1,61 @@
+.container{
+    margin: 20px 20% ;
+    background-color: aqua;
+    border-radius: 5%;
+}
+.nav{
+    display: flex;
+    align-items: center;
+    background-color: aliceblue;
+    border-radius: 6%;
+}
+.menu{
+    margin-right: 20px;
+}
+.menu ul{
+    display: flex;
+    list-style: none;
+    
+    /* margin-right: 30px; */
+}
+.menu li{
+    padding: 10px;
+}
+.menu li:hover{
+    background-color: aqua;
+}
+form{
+    margin: 20px 20%;
+    border: 1px solid rgb(110, 98, 98);
+    border-radius: 6%;
+    background-color: grey;
+}
+form input{
+    margin-left: 20px;
+    margin-top: 10px;
+}
+form label{
+    margin-left: 20px;
+}
+form p{
+    margin-left: 20px;
+}
+.registered-users{
+    margin: 20px;
+}
+.registered-users ul{
+    list-style: none;
+}
+.registered-users li{
+    border-left: 5px solid grey;
+    border-bottom: 1px solid grey;
+    border-radius: 5%;
+    padding: 10px;
+    background-color: white;
+}
+.deleteButton{
+    float: right;
+    background-color: aliceblue;
+    padding: 2px;
+}
+
